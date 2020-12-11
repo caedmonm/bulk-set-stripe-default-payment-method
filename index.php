@@ -99,7 +99,7 @@ function get_customers()
 
 	if ($response['has_more']) {
 		$starting_after = $customers[count($customers) - 1]['id'];
-		header("location:/portfolio/truthbrushstock/updatecards.php?starting_after=" . $starting_after. "&apikey=".$_GET['apikey']);
+		header("location:?starting_after=" . $starting_after. "&apikey=".$_GET['apikey']);
 	}
 }
 
